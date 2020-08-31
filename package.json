@@ -1,7 +1,7 @@
 {
-  "name": "@beaker/library-tools",
-  "version": "1.0.1",
-  "description": "Utility library to manage Beaker's library of dats.",
+  "name": "@dbrowser/library-tools",
+  "version": "1.0.0",
+  "description": "Utility library to manage DBrowserX's library of dvaults.",
   "main": "index.js",
   "scripts": {
     "build": "node ./scripts/build.js",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beakerbrowser/library-tools.git"
+    "url": "git+https://github.com/dbrowser/library-tools.git"
   },
   "author": "Paul Frazee <pfrazee@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beakerbrowser/library-tools/issues"
+    "url": "https://github.com/dbrowser/library-tools/issues"
   },
-  "homepage": "https://github.com/beakerbrowser/library-tools#readme"
+  "homepage": "https://github.com/dbrowser/library-tools#readme"
 }

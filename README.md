@@ -1,10 +1,10 @@
-# @beaker/library-tools
+# @dbrowser/library-tools
 
-Utility library to manage Beaker's library of dats.
+Utility library to manage DBrowserX's library of dvaults.
 
 ## Library folder and library.json
 
-Beaker manages a `/library` folder in the user's private hyperdrive that contains mounts to all saved dats. The archives are sorted into folders according to their "Primary Type" (see `getPrimaryType()`). An example folder hierarchy:
+DBrowserX manages a `/library` folder in the user's private ddrive that contains mounts to all saved dvaults. The archives are sorted into folders according to their "Primary Type" (see `getPrimaryType()`). An example folder hierarchy:
 
 ```
 /library/modules
@@ -15,12 +15,12 @@ Beaker manages a `/library` folder in the user's private hyperdrive that contain
 /library/library.json
 ```
 
-The `library.json` file is the primary record of the "saved dats." It lists saved dats along with additional configuration. Here is an example:
+The `library.json` file is the primary record of the "saved dvaults." It lists saved dvaults along with additional configuration. Here is an example:
 
 ```json
 {
-  "type": "beakerbrowser.com/library",
-  "dats": [
+  "type": "dbrowser.com/library",
+  "dvaults": [
     {
       "key": "9892414902579ba93ae62e63d5041b69b137f2aa9e86a4e2bc1bcef70ab6d569",
       "isHosting": true,
@@ -41,11 +41,11 @@ The json-schema for library.json [can be found here](./library.json).
 
 ## "Categories"
 
-Dat archives provide a `type` field in their manifests. The "category" is a shortname mapping to those full types.
+DWebX archives provide a `type` field in their manifests. The "category" is a shortname mapping to those full types.
 
-If multiple types are set on a dat, the first known type is used to determine the category.
+If multiple types are set on a dwebx, the first known type is used to determine the category.
 
-The "website" category is catchall for dats with an unknown type.
+The "website" category is catchall for dvaults with an unknown type.
 
 ## API
 

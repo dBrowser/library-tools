@@ -1,19 +1,19 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "dat://beakerbrowser.com/library.json",
+  "$id": "dwebx://dbrowser.com/library.json",
   "type": "object",
   "title": "Library",
   "required": [
     "type",
-    "dats"
+    "dvaults"
   ],
   "properties": {
     "type": {
       "type": "string",
       "description": "The object's type",
-      "const": "beakerbrowser.com/library"
+      "const": "dbrowser.com/library"
     },
-    "dats": {
+    "dvaults": {
       "type": "array",
       "items": {
         "type": "object",
