@@ -1,10 +1,10 @@
 const exports = {}
 
 const CATEGORIES = {
-  commands: 'unwalled.garden/command-package',
-  modules: 'unwalled.garden/module',
-  people: 'unwalled.garden/person',
-  websites: 'unwalled.garden/website',
+  commands: 'dstatus/command-package',
+  modules: 'dstatus/module',
+  people: 'dstatus/person',
+  websites: 'dstatus/website',
 }
 
 const CATEGORIES__P_TO_S = {
@@ -23,10 +23,10 @@ function getCat (st, usePlural) {
 
 exports.typeToCategory = function (type, usePlural = false) {
   type = Array.isArray(type) ? type[0] : type
-  if (type === 'unwalled.garden/command-package') return getCat('commands', usePlural)
-  if (type === 'unwalled.garden/module') return getCat('modules', usePlural)
-  if (type === 'unwalled.garden/person') return getCat('people', usePlural)
-  if (type === 'unwalled.garden/website') return getCat('websites', usePlural)
+  if (type === 'dstatus/command-package') return getCat('commands', usePlural)
+  if (type === 'dstatus/module') return getCat('modules', usePlural)
+  if (type === 'dstatus/person') return getCat('people', usePlural)
+  if (type === 'dstatus/website') return getCat('websites', usePlural)
   return undefined
 }
 

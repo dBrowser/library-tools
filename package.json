@@ -1,7 +1,7 @@
 {
   "name": "@dbrowser/library-tools",
   "version": "1.0.0",
-  "description": "Utility library to manage DBrowserX's library of dvaults.",
+  "description": "Utility library to manage dBrowser's library of dvaults.",
   "main": "index.js",
   "scripts": {
     "build": "node ./scripts/build.js",

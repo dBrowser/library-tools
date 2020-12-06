@@ -1,10 +1,10 @@
 # @dbrowser/library-tools
 
-Utility library to manage DBrowserX's library of dvaults.
+Utility library to manage dBrowser's library of dvaults.
 
 ## Library folder and library.json
 
-DBrowserX manages a `/library` folder in the user's private ddrive that contains mounts to all saved dvaults. The archives are sorted into folders according to their "Primary Type" (see `getPrimaryType()`). An example folder hierarchy:
+dBrowser manages a `/library` folder in the user's private ddrive that contains mounts to all saved dvaults. The archives are sorted into folders according to their "Primary Type" (see `getPrimaryType()`). An example folder hierarchy:
 
 ```
 /library/modules
@@ -54,9 +54,9 @@ The "website" category is catchall for dvaults with an unknown type.
 Provides the category for a given manifest's full type value.
 
 ```js
-libTools.typeToCategory('unwalled.garden/person', false)
+libTools.typeToCategory('dstatus/person', false)
 // => 'person'
-libTools.typeToCategory('unwalled.garden/person', true)
+libTools.typeToCategory('dstatus/person', true)
 // => 'people'
 ```
 
@@ -66,9 +66,9 @@ Provides the full type for a given category. Can use the plural or singular.
 
 ```js
 libTools.categoryToType('person')
-// => 'unwalled.garden/person'
+// => 'dstatus/person'
 libTools.categoryToType('people')
-// => 'unwalled.garden/person'
+// => 'dstatus/person'
 ```
 
 ### `getCategoriesArray(usePlural=false)`
@@ -89,16 +89,16 @@ Gives a map of the categories to their fully-qualified types.
 ```js
 libTools.getCategoriesMap(false)
 /* => {
-  module: 'unwalled.garden/module',
-  person: 'unwalled.garden/person',
-  template: 'unwalled.garden/template',
+  module: 'dstatus/module',
+  person: 'dstatus/person',
+  template: 'dstatus/template',
   website: undefined
 } */
 libTools.getCategoriesMap(true)
 /* => {
-  modules: 'unwalled.garden/module',
-  people: 'unwalled.garden/person',
-  templates: 'unwalled.garden/template',
+  modules: 'dstatus/module',
+  people: 'dstatus/person',
+  templates: 'dstatus/template',
   websites: undefined
 } */
 ```
